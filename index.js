@@ -1,6 +1,2 @@
-const verifyPDF = require('./lib/verifyPDF');
-const { getCertificatesInfoFromPDF } = require('./lib/certificateDetails');
-
-Object.assign(verifyPDF, { getCertificatesInfoFromPDF });
-
-module.exports = verifyPDF;
+export { default } from "./lib/verifyPDF";
+export { getCertificatesInfoFromPDF } from "./lib/certificateDetails";
