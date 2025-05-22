@@ -791,14 +791,20 @@ __metadata:
   resolution: "@qlever-llc/verify-pdf@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^1.9.4"
+    "@jest/globals": "npm:^29.7.0"
     "@signpdf/placeholder-pdfkit010": "npm:^3.2.5"
     "@signpdf/signer-p12": "npm:^3.2.4"
     "@signpdf/signpdf": "npm:^3.2.5"
+    "@tsconfig/node22": "npm:^22.0.2"
+    "@types/node": "npm:^22.15.21"
+    "@types/node-forge": "npm:^1.3.11"
+    "@types/pdfkit": "npm:^0.13.9"
     is-ci: "npm:^4.1.0"
     jest: "npm:^29.7.0"
     node-forge: "npm:^1.3.1"
     node-signpdf: "npm:^3.0.0"
     pdfkit: "npm:0.10.0"
+    typescript: "npm:^5.8.3"
   languageName: unknown
   linkType: soft
 
@@ -871,6 +877,13 @@ __metadata:
   dependencies:
     tslib: "npm:^2.4.0"
   checksum: 10c0/4fc621dedf82cb1eb4aed01f446376162e5eec38c58bab3dbd8cb318145170e18cd6693e83e121038e319d7405aed6cb1064e994edb7a89ca536a57ee34c306d
+  languageName: node
+  linkType: hard
+
+"@tsconfig/node22@npm:^22.0.2":
+  version: 22.0.2
+  resolution: "@tsconfig/node22@npm:22.0.2"
+  checksum: 10c0/c75e6b9ea86ec2a384adefac0e2f16a6c08202ae5cf6c8c745944396a6931ffb38e742809491c1882d1868c2af1c33744193701779674bfb1e05f6a130045a18
   languageName: node
   linkType: hard
 
@@ -949,10 +962,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node-forge@npm:^1.3.11":
+  version: 1.3.11
+  resolution: "@types/node-forge@npm:1.3.11"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: 10c0/3d7d23ca0ba38ac0cf74028393bd70f31169ab9aba43f21deb787840170d307d662644bac07287495effe2812ddd7ac8a14dbd43f16c2936bbb06312e96fc3b9
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 14.14.7
   resolution: "@types/node@npm:14.14.7"
   checksum: 10c0/c0ac55e57d1953b26f925519115744783f99f9591238476d6e2eef1ddcce6a0d14ef5fb99cb38da2d7cfd4dca7fbf5efde32af74d49958ceee41e1c6d02789d0
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^22.15.21":
+  version: 22.15.21
+  resolution: "@types/node@npm:22.15.21"
+  dependencies:
+    undici-types: "npm:~6.21.0"
+  checksum: 10c0/f092bbccda2131c2b2c8f720338080aa0ef1d928f5f1062c03954a4f7dafa7ee3ed29bc3e51bd4e2584473b3d943c637a2b39ad7174898970818270187cf10c1
+  languageName: node
+  linkType: hard
+
+"@types/pdfkit@npm:^0.13.9":
+  version: 0.13.9
+  resolution: "@types/pdfkit@npm:0.13.9"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: 10c0/e467fbbc4f4e5a487887c9f27784aa6262e5a45ab8f5676ee4662eb8862e1ef9a18a8f463fbc3150f2d50fe83902c5877714ac141acd8ccb780e18c88999cc29
   languageName: node
   linkType: hard
 
@@ -4393,6 +4433,33 @@ __metadata:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: 10c0/6005cb31df50eef8b1f3c780eb71a17925f3038a100d82f9406ac2ad1de5eb59f8e6decbdc145b3a1f8e5836e17b0c0002fb698b9fe2516b8f9f9ff602d36412
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^5.8.3":
+  version: 5.8.3
+  resolution: "typescript@npm:5.8.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/5f8bb01196e542e64d44db3d16ee0e4063ce4f3e3966df6005f2588e86d91c03e1fb131c2581baf0fb65ee79669eea6e161cd448178986587e9f6844446dbb48
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A^5.8.3#optional!builtin<compat/typescript>":
+  version: 5.8.3
+  resolution: "typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/39117e346ff8ebd87ae1510b3a77d5d92dae5a89bde588c747d25da5c146603a99c8ee588c7ef80faaf123d89ed46f6dbd918d534d641083177d5fac38b8a1cb
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: 10c0/c01ed51829b10aa72fc3ce64b747f8e74ae9b60eafa19a7b46ef624403508a54c526ffab06a14a26b3120d055e1104d7abe7c9017e83ced038ea5cf52f8d5e04
   languageName: node
   linkType: hard
 

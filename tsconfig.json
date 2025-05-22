@@ -1,0 +1,23 @@
+{
+	"extends": "@tsconfig/node22",
+	"include": ["lib/**/*.js"],
+	"compilerOptions": {
+		"emitDeclarationOnly": true,
+		"resolveJsonModule": true,
+		"checkJs": true,
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"allowSyntheticDefaultImports": true,
+		"composite": true,
+		"strict": true,
+		"alwaysStrict": true,
+		"verbatimModuleSyntax": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitThis": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noErrorTruncation": true
+	}
+}

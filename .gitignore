@@ -1,6 +1,12 @@
 node_modules/
 .DS_Store
 
+*.d.ts
+
+dist/
+coverage/
+*.tsbuildinfo
+
 /.yarn/*
 !/.yarn/patches/
 !/.yarn/releases/
