@@ -1,6 +1,6 @@
 {
 	"name": "@qlever-llc/verify-pdf",
-	"version": "2.1.0",
+	"version": "3.0.0",
 	"description": "verify pdf files in JS",
 	"main": "./lib/index.js",
 	"types": "./dist/index.d.ts",
@@ -9,6 +9,10 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"default": "./lib/index.js"
+		},
+		"./certificateAuthorities": {
+			"types": "./dist/helpers/certificateAuthorities.d.ts",
+			"default": "./lib/helpers/certificateAuthorities.js"
 		}
 	},
 	"engines": {
