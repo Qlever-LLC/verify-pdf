@@ -2,8 +2,9 @@
 	"extends": "@tsconfig/node22",
 	"include": ["lib/**/*.js"],
 	"compilerOptions": {
+		"rootDir": "lib",
+		"outDir": "dist",
 		"emitDeclarationOnly": true,
-		"resolveJsonModule": true,
 		"checkJs": true,
 		"module": "nodenext",
 		"moduleResolution": "nodenext",
