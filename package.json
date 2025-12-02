@@ -1,6 +1,6 @@
 {
 	"name": "@qlever-llc/verify-pdf",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "verify pdf files in JS",
 	"main": "./lib/index.js",
 	"types": "./dist/index.d.ts",
@@ -21,12 +21,11 @@
 	"scripts": {
 		"build": "yarn tsc -b",
 		"clean": "yarn build --clean",
-		"prepublish": "yarn build",
+		"prepare": "yarn build",
 		"test:coverage": "yarn test --coverage",
 		"test:watch": "yarn test --watch",
 		"test": "yarn node --experimental-vm-modules $(yarn bin jest)"
 	},
-	"files": ["lib", "packages"],
 	"publishConfig": {
 		"access": "public"
 	},
@@ -54,23 +53,23 @@
 		}
 	],
 	"dependencies": {
-		"node-forge": "^1.3.1"
+		"node-forge": "^1.3.2"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@jest/globals": "^29.7.0",
+		"@biomejs/biome": "^2.3.8",
+		"@jest/globals": "^30.2.0",
 		"@signpdf/placeholder-pdfkit010": "^3.2.5",
 		"@signpdf/signer-p12": "^3.2.4",
 		"@signpdf/signpdf": "^3.2.5",
-		"@tsconfig/node22": "^22.0.2",
-		"@types/node": "^22.15.24",
-		"@types/node-forge": "^1.3.11",
-		"@types/pdfkit": "^0.13.9",
+		"@tsconfig/node22": "^22.0.5",
+		"@types/node": "^24.10.1",
+		"@types/node-forge": "^1.3.14",
+		"@types/pdfkit": "^0.10.0",
 		"is-ci": "^4.1.0",
-		"jest": "^29.7.0",
+		"jest": "^30.2.0",
 		"node-signpdf": "^3.0.0",
 		"pdfkit": "0.10.0",
-		"typescript": "^5.8.3"
+		"typescript": "^5.9.3"
 	},
-	"packageManager": "yarn@4.9.1"
+	"packageManager": "yarn@4.12.0"
 }
